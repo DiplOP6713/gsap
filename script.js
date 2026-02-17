@@ -25,7 +25,7 @@ gsap.from(".box2",{
     scrollTrigger:{
         trigger:".box2",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 60%",
         scrub:1
     }
