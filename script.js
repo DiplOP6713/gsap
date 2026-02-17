@@ -1,0 +1,39 @@
+gsap.to(".box",{
+    backgroundColor:"#ff009d",
+    duration:4
+})
+gsap.to(".box2",{
+})
+gsap.from("h1",{
+    y:30,
+    opacity:0,
+    duraton:1,
+    stagger:0.2,
+    repeat:2,
+    yoyo:true
+})
+gsap.from(".box1",{
+    scale:0,
+    rotate:360,
+    duration:4
+})
+gsap.from(".box2",{
+    scale:0,
+    rotate:360,
+    duration:4,
+    backgroundColor:"#ff009d",
+    scrollTrigger:{
+        trigger:".box2",
+        scroller:"body",
+        markers:true,
+        start:"top 60%",
+        scrub:1
+    }
+})
+gsap.from(".box3",{
+    scale:0,
+    rotate:360,
+    duration:4,
+    scrollTrigger:".box3"
+
+})
